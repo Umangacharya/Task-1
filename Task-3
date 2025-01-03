@@ -1,0 +1,13 @@
+import random
+lower = 'abcdefghijklmnopqrstuvwxyz'
+upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+symbol = '()[]{};_#*._'
+number = '0123456789'
+
+all = lower + upper + number + symbol
+
+length = 7
+
+password =  "".join(random.sample(all,length))
+
+print("The Generated password is: ", password)
